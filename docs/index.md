@@ -2,7 +2,7 @@
 home: true
 # heroImage: /img/avatar.png
 heroText: GeorgeH's Blog
-tagline: Web前端技术博客，积跬步以至千里，致敬每个爱学习的你。
+tagline: 日益努力，而后风生水起
 # tagline: <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,World!;Welcome+to+my+profile!!&center=true&size=27"> 
 # actionText: 起飞🚀 
 # actionLink: /web/

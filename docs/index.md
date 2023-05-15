@@ -2,11 +2,11 @@
 home: true
 # heroImage: /img/avatar.png
 heroText: GeorgeH's Blog
-tagline: 日益努力，而后风生水起
+tagline: 越是向往阳光，根就越要伸向黑暗的地底
 # tagline: <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,World!;Welcome+to+my+profile!!&center=true&size=27"> 
 # actionText: 起飞🚀 
 # actionLink: /web/
-bannerBg: /img/beach.jpg #=> 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+# bannerBg: /img/beach.jpg #=> 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
 # features: # 可选的
 #   - title: 前端

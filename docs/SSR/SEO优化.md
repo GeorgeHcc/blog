@@ -1,3 +1,15 @@
+---
+title: SEO优化
+date: 2023-05-06 23:40:59
+permalink: /pages/e21803/
+categories:
+  - SSR
+tags:
+  - 
+author: 
+  name: GeorgeH
+  link: https://github.com/GeorgeHcc
+---
 # SEO优化
 
 - 语义性的HTML标记

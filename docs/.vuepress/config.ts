@@ -69,7 +69,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
         ],
       },
-      {text:"简历",link:"https://georgeh.com.cn/resume"},
+      {text:"简历",link:"https://resume.georgeh.com.cn/"},
       {
         text: "计算机基础",
         link: "/cs/",

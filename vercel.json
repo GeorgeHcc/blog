@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "docs/.vuepress/dist/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/docs/.vuepress/dist/$1"
+      }
+    ]
+  }

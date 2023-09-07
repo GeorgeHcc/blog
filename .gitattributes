@@ -1,2 +1,2 @@
-*.html linguist-language=react
+*.html linguist-language=javascript
 *.css linguist-language=javascript

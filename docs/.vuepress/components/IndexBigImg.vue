@@ -17,6 +17,7 @@
           "rgba(255, 148, 48, .2)",
           "rgba(0, 0, 0, .3)",
           "rgba(0, 0, 0, .5)",
+        //   "rgba(255, 255, 255, .5)",
         ],
         descFade: false,
         desc: [],
@@ -324,13 +325,16 @@
           this.alive = true;
           this.x = Math.round(Math.random() * canvas.width);
           this.y = Math.round(Math.random() * canvas.height);
-          this.diameter = Math.random() * 10.8;
+          this.diameter = Math.random() * 6.8;
           this.ColorData = {
+            // Red:  255,
+            // Green:255,
+            // Blue:  255,
             Red: Math.round(Math.random() * 255),
             Green: Math.round(Math.random() * 255),
             Blue: Math.round(Math.random() * 255),
           };
-          this.alpha = 0.5;
+          this.alpha = 0.1;
           this.color =
             "rgba(" +
             this.ColorData.Red +

@@ -1,7 +1,0 @@
-**/.git
-**/.nuxt
-**/node_modules
-**/*.json
-**/*.lock
-**/*.md
-**/*.yml

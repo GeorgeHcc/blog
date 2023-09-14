@@ -20,7 +20,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "George's blog",
+      title: "GeorgeH's blog",
       description:
         "web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,css3,html5,Node,git,github等技术文章。",
     },
@@ -195,7 +195,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: "https://cdn.jsdelivr.net/gh/GeorgeHcc/GeorgeHcc@main/assets/blog/GeorgeH.jpg",
+      avatar: "https://cdn.jsdelivr.net/gh/GeorgeHcc/GeorgeHcc@main/assets/blog/georgeh.jpg",
       name: "GeorgeH",
       slogan: "talk is cheap,show me the code",
     },

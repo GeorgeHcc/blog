@@ -1,5 +1,5 @@
 ---
-title: TypeScript进阶
+title: TypeScript进阶之装饰器
 date: 2023-08-01 21:18:56
 permalink: /pages/93d8d0/
 sidebar: auto

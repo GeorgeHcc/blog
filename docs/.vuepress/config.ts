@@ -5,7 +5,11 @@
 import { defineConfig4CustomTheme, UserPlugins } from "vuepress/config";
 import { VdoingThemeConfig } from "vuepress-theme-vdoing/types";
 import dayjs from "dayjs";
-import { readFileList, readTotalFileWords, readEachFileWords } from "./webSiteInfo/readFiles";
+import {
+  readFileList,
+  readTotalFileWords,
+  readEachFileWords,
+} from "./webSiteInfo/readFiles";
 
 import baiduCode from "./config/baiduCode"; // 百度统计hm码
 // import htmlModules from "./config/htmlModules"; // 自定义插入的html块
@@ -30,20 +34,29 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // 主题配置
   themeConfig: {
     indexImg: {
-      navColor: 2,    // 导航栏左侧名字、中间搜索框、右侧字体的颜色，1 是黑色，2 是白色。默认是 1
-      switchNavColor: true,    // 页面移出大图片的位置后，navColor 是否变换，如由白色变黑色，黑色变白色。默认是 false
+      navColor: 2, // 导航栏左侧名字、中间搜索框、右侧字体的颜色，1 是黑色，2 是白色。默认是 1
+      switchNavColor: true, // 页面移出大图片的位置后，navColor 是否变换，如由白色变黑色，黑色变白色。默认是 false
       // 因为本主题的默认背景色偏向白色，如果 navColor 是 2，建议需要开启(true)，否则白背景 + 白字体 = 看不见
-      bgTimeColor: true,     // 是否开启图片的背景色随一天的不同时间而变化，并且开启时间窗口提示，默认是 false。时间分为四种：白天（原图）、黄昏（偏黄）、晚上（偏黑）、深夜（偏深黑）
-      bgTimeColorArray: ['transparent', 'rgba(255, 148, 48, .2)', 'rgba(0, 0, 0, .3)', 'rgba(0, 0, 0, .5)'],   // 第一个是白天的颜色（默认原图），第二个是黄昏的颜色，第三个是晚上的颜色，第四个是深夜的颜色。bgTimeColor 为 true 生效。提示：如果不想要这个效果，但是又想要时间窗口提示效果，则改为 ['transparent', 'transparent', 'transparent', 'transparent']
-      descFade: true,   // 是否开启图片中间描述的淡入效果，默认为 false
-      desc: ["Web前端技术博客，积跬步以至千里，致敬每个爱学习的你 —— 来自 Evan Xu", "故事由我书写，旅程由你见证，传奇由她聆听 —— 来自 Young Kbt", "这一生波澜壮阔或是不惊都没问题 —— 来自 Weibw"],  // 多个描述，如果填写则覆盖 config.js 的 description，不填写默认读取 config.js 的 description，descFade 为 true 生效
-      descFontSize: '1.2rem',   // desc 的字体大小，默认 1.4rem。提示：原主题是 1.1rem
-      descFadeInTime: 200,  // 描述的淡入效果持续时间，descFade 为 true 生效，默认 200 毫秒
-      descFadeOutTime: 100,  // 描述的淡出效果持续时间，descFade 为 true 生效，默认 100 毫秒
-      descNextTime: 800,  // 当存在多个 desc 时，一个 desc 展示完后或准备开始时，多少秒后出现下一个 desc，默认 800 毫秒
-      bubble: true,    // 是否开启图片的气泡效果，默认为 false
-      bubblePosition: 0,  // 气泡效果的位置，范围：0-100，不同数值代表不同的起始位置，0是整个图片，50是半张图（一半的下方）。bubble 为 true 生效。默认是 0
-      bubbleNum: 200,   // 气泡的个数，bubble 为 true 生效，默认 200 个
+      bgTimeColor: true, // 是否开启图片的背景色随一天的不同时间而变化，并且开启时间窗口提示，默认是 false。时间分为四种：白天（原图）、黄昏（偏黄）、晚上（偏黑）、深夜（偏深黑）
+      bgTimeColorArray: [
+        "transparent",
+        "rgba(255, 148, 48, .2)",
+        "rgba(0, 0, 0, .3)",
+        "rgba(0, 0, 0, .5)",
+      ], // 第一个是白天的颜色（默认原图），第二个是黄昏的颜色，第三个是晚上的颜色，第四个是深夜的颜色。bgTimeColor 为 true 生效。提示：如果不想要这个效果，但是又想要时间窗口提示效果，则改为 ['transparent', 'transparent', 'transparent', 'transparent']
+      descFade: true, // 是否开启图片中间描述的淡入效果，默认为 false
+      desc: [
+        "Web前端技术博客，积跬步以至千里，致敬每个爱学习的你 —— 来自 Evan Xu",
+        "故事由我书写，旅程由你见证，传奇由她聆听 —— 来自 Young Kbt",
+        "越是向往阳光，根就越要伸向黑暗的地底 —— 来自 George H",
+      ], // 多个描述，如果填写则覆盖 config.js 的 description，不填写默认读取 config.js 的 description，descFade 为 true 生效
+      descFontSize: "1.2rem", // desc 的字体大小，默认 1.4rem。提示：原主题是 1.1rem
+      descFadeInTime: 200, // 描述的淡入效果持续时间，descFade 为 true 生效，默认 200 毫秒
+      descFadeOutTime: 100, // 描述的淡出效果持续时间，descFade 为 true 生效，默认 100 毫秒
+      descNextTime: 800, // 当存在多个 desc 时，一个 desc 展示完后或准备开始时，多少秒后出现下一个 desc，默认 800 毫秒
+      bubble: true, // 是否开启图片的气泡效果，默认为 false
+      bubblePosition: 0, // 气泡效果的位置，范围：0-100，不同数值代表不同的起始位置，0是整个图片，50是半张图（一半的下方）。bubble 为 true 生效。默认是 0
+      bubbleNum: 200, // 气泡的个数，bubble 为 true 生效，默认 200 个
     },
     // 导航配置
     nav: [
@@ -148,7 +161,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           { text: "网站", link: "/pages/beb6c0bd8a66cea6/" },
           { text: "前端轮子", link: "/pages/47cf96/" },
-         
         ],
       },
       {
@@ -162,7 +174,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: "/img/GeorgeH.jpg", // 导航栏logo
+    // logo: "/img/GeorgeH.jpg", // 导航栏logo
     repo: "GeorgeHcc/blog", // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: "上次更新", // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
@@ -193,7 +205,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // updateBar: { // 最近更新栏
     //   showToArticle: true, // 显示到文章页底部，默认true
     //   moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
-    // },                                             
+    // },
     // rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
     // sidebarOpen: false, // 初始状态是否打开左侧边栏，默认true
     // pageButton: false, // 是否显示快捷翻页按钮，默认true
@@ -211,7 +223,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: "https://cdn.jsdelivr.net/gh/GeorgeHcc/GeorgeHcc@main/assets/blog/georgeh.jpg",
+      avatar:
+        "https://cdn.jsdelivr.net/gh/GeorgeHcc/GeorgeHcc@main/assets/blog/georgeh.jpg",
       name: "GeorgeH",
       slogan: "talk is cheap,show me the code",
     },
@@ -279,7 +292,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
     ["link", { rel: "icon", href: "/img/favicon.ico" }], //favicons，资源放在public文件夹
-    ["link", { rel: "stylesheet", href: "https://at.alicdn.com/t/c/font_3993758_78qx5kw5sza.css" }],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://at.alicdn.com/t/c/font_3993758_78qx5kw5sza.css",
+      },
+    ],
     [
       "meta",
       {
@@ -290,7 +309,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     // ["meta", { name: "baidu-site-verification", content: "7F55weZDDc" }], // 百度统计的站长验证（你可以去掉）
     ["meta", { name: "theme-color", content: "#11a8cd" }], // 移动浏览器主题颜色
-    ["meta",{name:"baidu-site-verification",content:"codeva-ZaOnRvW0XM"}]//baidu 验证
+    ["meta", { name: "baidu-site-verification", content: "codeva-ZaOnRvW0XM" }], //baidu 验证
     // <meta name="baidu-site-verification" content="codeva-ZaOnRvW0XM" />
     // [
     //   'script',
@@ -359,7 +378,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     [
       "one-click-copy", // 代码块复制按钮
       {
-        copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
+        copySelector: [
+          'div[class*="language-"] pre',
+          'div[class*="aside-code"] aside',
+        ], // String or Array
         copyMessage: "复制成功", // default is 'Copy successfully and then paste it for use.'
         duration: 1000, // prompt message display time.
         showInMobile: false, // whether to display on the mobile side, default: false.

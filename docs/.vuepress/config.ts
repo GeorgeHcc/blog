@@ -26,7 +26,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       lang: "zh-CN",
       title: "GeorgeH's blog",
       description:
-        "web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,css3,html5,Node,git,github等技术文章。",
+        "前端技术博客,思考、沉淀、总结!包含JavaScript、Typescript、Vue、React、webpack等技术",
     },
   },
   // base: "/", // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -175,8 +175,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    // logo: "/img/GeorgeH.jpg", // 导航栏logo
-    repo: "GeorgeHcc/blog", // 导航栏右侧生成Github链接
+    logo: "/img/GeorgeH.jpg", // 导航栏logo
+    // repo: "GeorgeHcc", // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: "上次更新", // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: "docs", // 编辑的文件夹

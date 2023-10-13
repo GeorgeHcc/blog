@@ -49,7 +49,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         "越是向往阳光，根就越要伸向黑暗的地底 —— 来自 George H",
         "Web前端技术博客，积跬步以至千里，致敬每个爱学习的你 —— 来自 Evan Xu",
         "故事由我书写，旅程由你见证，传奇由她聆听 —— 来自 Young Kbt",
-        
       ], // 多个描述，如果填写则覆盖 config.js 的 description，不填写默认读取 config.js 的 description，descFade 为 true 生效
       descFontSize: "1.2rem", // desc 的字体大小，默认 1.4rem。提示：原主题是 1.1rem
       descFadeInTime: 200, // 描述的淡入效果持续时间，descFade 为 true 生效，默认 200 毫秒
@@ -62,99 +61,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 导航配置
     nav: [
       { text: "首页", link: "/" },
-      {
-        text: "前端",
-        link: "/web/", //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-        items: [
-          // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-          {
-            text: "前端",
-            items: [{ text: "JavaScript", link: "/pages/8143cc480faf9a11/" }],
-          },
-          {
-            text: "学习笔记",
-            items: [
-              { text: "《JavaScript教程》", link: "/note/javascript/" },
-              { text: "《JavaScript高级程序设计》", link: "/note/js/" },
-              { text: "《ES6 教程》", link: "/note/es6/" },
-              { text: "《Vue》", link: "/note/vue/" },
-              { text: "《React》", link: "/note/react/" },
-              {
-                text: "《TypeScript 从零实现 axios》",
-                link: "/note/typescript-axios/",
-              },
-              {
-                text: "《Git》",
-                link: "/note/git/",
-              },
-              {
-                text: "TypeScript",
-                link: "/pages/51afd6/",
-              },
-              {
-                text: "JS设计模式总结",
-                link: "/pages/4643cd/",
-              },
-            ],
-          },
-        ],
-      },
-      // {text:"简历",link:"https://resume.georgeh.com.cn/"},
-      {
-        text: "计算机基础",
-        link: "/cs/",
-        items: [
-          {
-            text: "学习笔记",
-            items: [
-              { text: "操作系统", link: "/cs/os/" },
-              { text: "计算机网络", link: "/cs/net/" },
-              { text: "数据结构", link: "/cs/ds/" },
-            ],
-          },
-          {
-            text: "算法",
-            items: [
-              { text: "算法基础", link: "/pages/d79d62/" },
-              { text: "刷题记录", link: "/cs/practice/" },
-            ],
-          },
-          {
-            text: "实用工具",
-            items: [{ text: "网络抓包工具", link: "/pages/57d8f4/" }],
-          },
-        ],
-      },
-      {
-        text: "技术",
-        link: "/tech/",
-        items: [
-          {
-            text: "云原生",
-            items: [
-              { text: "docker", link: "/pages/048d97/" },
-              { text: "serverless", link: "/pages/504ba5/" },
-            ],
-          },
-          {
-            text: "数据库",
-            items: [
-              { text: "MySQL", link: "/pages/fa2de5/" },
-              { text: "MongoDB", link: "/pages/013787/" },
-              { text: "GraphQL", link: "/pages/c96978/" },
-            ],
-          },
-        ],
-      },
-      {
-        text: "其他",
-        link: "/other/",
-        items: [
-          { text: "面试", link: "/other/interview/" },
-          { text: "生活记录", link: "/other/life/" },
-          { text: "鸡汤", link: "/other/soul/" },
-        ],
-      },
+      {text:"React",link:"/pages/26b5ed/"},
+      {text:"Vue",link:"/pages/647339/"},
+     
+      {text:"Node.js",link:"/pages/eb7492/"},
+      {text:"网络",link:"/pages/93a178/"},
+     
+      { text: "工程化",link: "/pages/93ecc5/",},
+      {text:"跨端",link:"/cross-end"},
       { text: "关于", link: "/pages/c5aa1f/" },
       {
         text: "收藏",
@@ -201,7 +115,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   '图标地址1',
     //   '图标地址2'
     // ],
-    // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
+    contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
     // updateBar: { // 最近更新栏
     //   showToArticle: true, // 显示到文章页底部，默认true

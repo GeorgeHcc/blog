@@ -40,9 +40,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       bgTimeColor: true, // 是否开启图片的背景色随一天的不同时间而变化，并且开启时间窗口提示，默认是 false。时间分为四种：白天（原图）、黄昏（偏黄）、晚上（偏黑）、深夜（偏深黑）
       bgTimeColorArray: [
         "transparent",
-        "rgba(255, 148, 48, .2)",
-        "rgba(0, 0, 0, .3)",
-        "rgba(0, 0, 0, .5)",
+        "transparent",
+        "transparent",
+        "transparent",
       ], // 第一个是白天的颜色（默认原图），第二个是黄昏的颜色，第三个是晚上的颜色，第四个是深夜的颜色。bgTimeColor 为 true 生效。提示：如果不想要这个效果，但是又想要时间窗口提示效果，则改为 ['transparent', 'transparent', 'transparent', 'transparent']
       descFade: true, // 是否开启图片中间描述的淡入效果，默认为 false
       desc: [
@@ -106,7 +106,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
     // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
-    // bodyBgImg:"/img/forest.jpg",
+    bodyBgImg:"img/header-bg.jpg",
     // bodyBgImg: ["https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg"], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
     bodyBgImgOpacity: 0.9, // body背景图透明度，选值 0.1~1.0, 默认0.5
     // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s

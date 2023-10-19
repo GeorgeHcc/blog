@@ -54,7 +54,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       descFadeInTime: 200, // 描述的淡入效果持续时间，descFade 为 true 生效，默认 200 毫秒
       descFadeOutTime: 100, // 描述的淡出效果持续时间，descFade 为 true 生效，默认 100 毫秒
       descNextTime: 800, // 当存在多个 desc 时，一个 desc 展示完后或准备开始时，多少秒后出现下一个 desc，默认 800 毫秒
-      bubble: true, // 是否开启图片的气泡效果，默认为 false
+      bubble: false, // 是否开启图片的气泡效果，默认为 false
       bubblePosition: 0, // 气泡效果的位置，范围：0-100，不同数值代表不同的起始位置，0是整个图片，50是半张图（一半的下方）。bubble 为 true 生效。默认是 0
       bubbleNum: 200, // 气泡的个数，bubble 为 true 生效，默认 200 个
     },

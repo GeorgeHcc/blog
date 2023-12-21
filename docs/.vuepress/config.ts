@@ -69,6 +69,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
      
       { text: "工程化",link: "/pages/93ecc5/",},
       {text:"跨端",link:"/cross-end"},
+      {text:"WebRTC实战",link:"/pages/27060e/"},
       { text: "关于", link: "/pages/c5aa1f/" },
       {
         text: "收藏",
